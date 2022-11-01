@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Roboto Mono', monospace;
+  /*background-color: #E5E7E9;*/
+  /* background-image: url("assets/pexels-olia-danilevich-5471988.jpg");
+   background-size: cover;*/
+  box-sizing: border-box;
+}

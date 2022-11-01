@@ -1,0 +1,31 @@
+.card {
+  padding: 20px;
+  height: 350px;
+  width: 200px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.card-main-styles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-main-styles label {
+  font-weight: 500;
+}
+
+.card-main-styles img {
+
+  border-radius: 50%;
+}
+
+.card-description {
+  padding: 20px;
+  text-align: center;
+}
