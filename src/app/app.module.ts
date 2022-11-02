@@ -5,6 +5,7 @@ import {AppComponent} from './app.component';
 import {CardComponent} from './components/card/card.component';
 import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
+import {ServiceWorkerModule} from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,13 @@ import {CommonModule} from "@angular/common";
   imports: [
     BrowserModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: true/*environment.production*/,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

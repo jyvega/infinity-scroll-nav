@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   title = 'infinity-scroll-nav';
   products: Product[] = [];
   offset: number = 0;
-  limit: number = 8;
+  limit: number = 12;
 
   constructor(private httpClient: HttpClient) {
 
