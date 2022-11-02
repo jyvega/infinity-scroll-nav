@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,4 +14,11 @@ body {
   /* background-image: url("assets/pexels-olia-danilevich-5471988.jpg");
    background-size: cover;*/
   box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }

@@ -2,15 +2,17 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
-import {CardComponent} from './components/card/card.component';
+import {CardComponent} from './share/components/card/card.component';
 import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
 import {ServiceWorkerModule} from '@angular/service-worker';
+import {NavComponent} from './share/components/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent
+    CardComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

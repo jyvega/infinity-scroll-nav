@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 import {Product} from "./share/interfaces";
+import {ProductService} from "./share/services/product.service";
 
 @Component({
   selector: 'app-root',
@@ -13,34 +13,31 @@ export class AppComponent implements OnInit {
   offset: number = 0;
   limit: number = 12;
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private productService: ProductService) {
 
   }
 
   ngOnInit(): void {
     this.products = [];
-    this.getProducts();
+
+    this.commonGetProducts();
+
     addEventListener('scroll', () => {
       if (Math.trunc(window.scrollY) == document.documentElement.scrollHeight - window.innerHeight) {
-        this.getProducts();
+        this.commonGetProducts();
       }
     }, {passive: true});
+
   }
 
-  getProducts() {
-    this.httpClient.get('https://api.escuelajs.co/api/v1/products', {
-      params: {
-        offset: this.offset,
-        limit: this.limit
-      }
-    })
-      .toPromise()
+  commonGetProducts() {
+    this.productService.getProducts(this.offset, this.limit)
       .then(value => {
         this.products.push(...value as Array<Product>);
         if (this.products.length > 0) {
           this.offset += this.limit;
         }
       })
-      .catch(reason => console.log(reason))
+      .catch(reason => console.log(reason));
   }
 }
