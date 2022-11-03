@@ -5,19 +5,26 @@ nav {
   background-image: url("../../../../assets/nav-header.jpg");
   background-size: cover;
   display: flex;
-  padding-left: 20px;
+  /*padding-left: 40px;*/
   justify-content: start;
   position: fixed;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
+.width-10 {
+  width: 10%;
+}
+
+.wrapper-links {
   padding: 10px;
 }
 
-nav a:nth-child(2n) {
+.wrapper-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.wrapper-links a:nth-child(2n) {
   margin-right: 1rem;
   margin-left: 1rem;
 }

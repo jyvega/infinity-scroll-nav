@@ -94,29 +94,44 @@ label {
   position: fixed;
   bottom: 40px;
   right: 40px;
-  height: 48px;
-  width: 48px;
+  /*height: 48px;
+  width: 48px;*/
   border-radius: 50%;
   transition: all 300ms ease 0ms;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);*/
   z-index: 99;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  /* display: flex;
+   justify-content: center;
+   align-content: center;*/
+  overflow: hidden;
+  animation: mymove 0.9s infinite;
 }
 
 .btn-flotante span {
+  color: black;
+  padding: 10px;
 }
 
 .btn-flotante:hover {
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  /*box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);*/
   transform: translateY(-7px);
+}
+
+@keyframes mymove {
+  from {
+    bottom: 40px;
+    right: 40px;
+  }
+  to {
+    bottom: 65px;
+    right: 40px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .btn-flotante {
-    height: 28px;
-    width: 28px;
+    /* height: 28px;
+     width: 28px;*/
     bottom: 20px;
     right: 20px;
   }
