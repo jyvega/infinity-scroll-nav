@@ -93,7 +93,7 @@ label {
 .btn-flotante {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  right: 15px;
   /*height: 48px;
   width: 48px;*/
   border-radius: 50%;
@@ -120,11 +120,11 @@ label {
 @keyframes mymove {
   from {
     bottom: 40px;
-    right: 40px;
+    right: 15px;
   }
   to {
     bottom: 65px;
-    right: 40px;
+    right: 15px;
   }
 }
 
@@ -133,6 +133,10 @@ label {
     /* height: 28px;
      width: 28px;*/
     bottom: 20px;
-    right: 20px;
+    right: 15px;
+  }
+
+  .container-section {
+    justify-content: center;
   }
 }
