@@ -2,7 +2,7 @@
 
 <app-nav></app-nav>
 <header id="sectionTop">
-  <input type="text" placeholder="What do you looking for?" autofocus>
+  <input type="text" placeholder="What do you looking for?" autofocus [formControl]="searchControl">
 </header>
 <div class="container">
   <a href="#sectionTop" class="btn-flotante">
@@ -14,7 +14,7 @@
 </div>
 <div class="wrapper-section">
   <div class="container-section">
-    <div *ngFor="let p of products">
+    <div *ngFor="let p of productsFiltered; trackBy: trackByFn">
       <app-card [product]="p"></app-card>
     </div>
   </div>
