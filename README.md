@@ -1,4 +1,4 @@
-# InfinityScrollNav
+# Infinity Scroll Nav
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
 
@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Sonar
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)  
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=jyvega_infinity-scroll-nav&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=jyvega_infinity-scroll-nav&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=jyvega_infinity-scroll-nav&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jyvega_infinity-scroll-nav&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=jyvega_infinity-scroll-nav&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=jyvega_infinity-scroll-nav&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jyvega_infinity-scroll-nav&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=jyvega_infinity-scroll-nav&metric=bugs)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=jyvega_infinity-scroll-nav&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=jyvega_infinity-scroll-nav&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=jyvega_infinity-scroll-nav)
